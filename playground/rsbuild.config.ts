@@ -1,6 +1,14 @@
 import { defineConfig } from '@rsbuild/core';
-import { pluginExample } from '../src';
+import { pluginBabel } from '@rsbuild/plugin-babel';
+import { pluginVue } from '@rsbuild/plugin-vue';
+import { pluginVueJsx } from '@rsbuild/plugin-vue-jsx';
 
 export default defineConfig({
-  plugins: [pluginExample()],
+  plugins: [
+    pluginBabel({
+      include: /\.(?:jsx|tsx)$/,
+    }),
+    pluginVue(),
+    pluginVueJsx(),
+  ],
 });

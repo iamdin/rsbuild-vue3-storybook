@@ -2,8 +2,30 @@
   "name": "playground",
   "private": true,
   "version": "0.0.0",
+  "type": "module",
   "scripts": {
     "dev": "npx rsbuild dev",
-    "build": "npx rsbuild build"
+    "build": "npx rsbuild build",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "^3.2.2",
+    "@rsbuild/plugin-vue": "^1.0.5",
+    "@storybook/addon-essentials": "8.5.0-alpha.22",
+    "@storybook/addon-interactions": "8.5.0-alpha.22",
+    "@storybook/addon-links": "8.5.0-alpha.22",
+    "@storybook/addon-onboarding": "8.5.0-alpha.22",
+    "@storybook/blocks": "8.5.0-alpha.22",
+    "@storybook/test": "8.5.0-alpha.22",
+    "@storybook/vue3": "8.5.0-alpha.22",
+    "rsbuild-vue3-storybook": "workspace:*",
+    "storybook": "8.5.0-alpha.22",
+    "storybook-vue3-rsbuild": "^0.1.6"
+  },
+  "dependencies": {
+    "@rsbuild/plugin-babel": "^1.0.3",
+    "@rsbuild/plugin-vue-jsx": "^1.0.1",
+    "vue": "^3.5.13"
   }
 }
