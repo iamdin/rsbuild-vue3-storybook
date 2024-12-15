@@ -1,6 +1,6 @@
 {
   "name": "rsbuild-vue3-storybook",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "repository": "https://github.com/rspack-contrib/rsbuild-vue3-storybook",
   "license": "MIT",
   "type": "module",
